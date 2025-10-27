@@ -23,11 +23,11 @@
 
           sort_2way($nums, TRUE);  // 昇順
           foreach($nums as $num);
-          echo "<br>";
+          echo $num . '<br>';
 
           sort_2way($nums, FALSE); // 降順
           foreach($nums as $num);
-          echo "<br>";
+          echo $num . '<br>';
         ?>
     </p>
     

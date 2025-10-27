@@ -20,14 +20,24 @@
         }  
         $nums = [15, 4, 18, 23, 10];
 
-          sort_2way($nums, TRUE);  // 昇順
-          print_r($nums);
+        // 昇順
+        $sorted = sort_2way($nums, TRUE);
+          foreach ($sorted as $num) {
+          echo $num . '<br>';
+        }
 
-          sort_2way($nums, FALSE); // 降順
-          print_r($nums);  
+        // 区切り
+        echo '<hr>';
+
+        // 降順
+        $sorted = sort_2way($nums, FALSE);
+          foreach ($sorted as $num) {
+          echo $num . '<br>';
+        }
         ?>
     </p>
     
 </body>
+
 
 </html>

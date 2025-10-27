@@ -14,18 +14,20 @@
           if ($order === TRUE) {
             echo '昇順にソートします。';
             sort($array);   // 昇順
-            foreach ($array as $array) {
-            echo $array . '<br>';
             }
-          }
           else {
             echo '降順でソートします。';
             rsort($array);  // 降順
-            foreach ($array as $array) {
-            echo $array . '<br>';
-          }
           }
         }
+
+          sort_2way($nums, TRUE);  // 昇順
+          foreach($nums as $num);
+          echo "<br>";
+
+          sort_2way($nums, FALSE); // 降順
+          foreach($nums as $num);
+          echo "<br>";
         ?>
     </p>
     

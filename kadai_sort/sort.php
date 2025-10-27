@@ -21,15 +21,17 @@
           }
         }
 
-          sort_2way($nums, TRUE);  // 昇順
+          sort_2way($nums, TRUE);{  // 昇順
           foreach($nums as $num){
           echo $num . '<br>';
           }
+        }
 
-          sort_2way($nums, FALSE); // 降順
+          sort_2way($nums, FALSE);{ // 降順
           foreach($nums as $num){
           echo $num . '<br>';
           }
+        }
         ?>
     </p>
     

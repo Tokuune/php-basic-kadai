@@ -1,9 +1,9 @@
 <?php
 // クラスfOODを定義する
-class food {
+class Food {
   // プロパティを定義する
-  public $name;
-  public $price;
+  private $name;
+  private $price;
   // メソッドを定義する
   public function show_price() {
   echo $this->price . '<br>';
@@ -15,32 +15,34 @@ class food {
   }
 }
 
-class animal {
+class Animal {
   // プロパティを定義する
-  public $name;
-  public $height;
-  public $weight;
+  private $name;
+  private $height;
+  private $weight;
   // メソッドを定義する
   public function show_height() {
   echo $this->height . '<br>';
   }
   // コンストラクタを定義する
-  public function __construct(string $name, int $height, string $weight) {
+  public function __construct(string $name, string $height, string $weight) {
     $this->name   = $name;
-    $this->price  = $price;
+    $this->height = $height;
     $this->weight = $weight;
   }
 }
 
 // インスタンス化する
-$food   = new food('pasta', '$20');
-$animal = new animal('Cat', '60cm', '6kg');
+$Food   = new Food('pasta', 20);
+$Animal = new Animal('Cat', '60cm', '6kg');
 
 // インスタンス$userの各プロパティの値を出力する
-print_r($food);
-print_r($animal);
+print_r($Food);
+echo '<br>';
+print_r($Animal);
+echo '<br>';
 
 // メソッドにアクセスして実行する
-$food->show_price();
-$animal->show_height();
+$Food->show_price();
+$Animal->show_height();
 ?>
